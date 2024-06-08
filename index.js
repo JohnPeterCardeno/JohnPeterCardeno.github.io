@@ -8,6 +8,10 @@ const btndisLike2 = document.getElementById("btndisLike2")
 const countdisLikes1 = document.getElementById("countdisLikes1")
 const countdisLikes2 = document.getElementById("countdisLikes2")
 
+const submit = document.getElementById("submit")  
+const comment = document.getElementById("comment") 
+const commentbox = document.getElementById("commentbox")
+
 
 function hitLikes1() {
   let totalLikes1 = parseInt(countLikes1.value) + 1
@@ -29,9 +33,6 @@ function hitdisLikes2() {
 }
 btndisLike1.addEventListener("click",hitdisLikes1)
 btndisLike2.addEventListener("click",hitdisLikes2)
-const submit = document.getElementById("submit")  
-const comment = document.getElementById("comment") 
-const commentbox = document.getElementById("commentbox")  
 function submitComment() {   
    commentbox.textContent += comment.value.toString() + "\n" 
    comment.value = "";
